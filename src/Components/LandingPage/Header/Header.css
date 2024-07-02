@@ -1,30 +1,57 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 30px;
-  }
-  
-  .nav a {
-    margin: 0 30px;
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .signup-button {
-    padding: 10px 20px;
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px 40px 10px 20px; /* Add padding to make space for the icon */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 22%; /* Adjust based on the width of the input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
