@@ -1,0 +1,43 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px; /* Adjusted padding for appropriate margins */
+  }
+  
+  .illustration {
+    flex: 1 1 60%; /* Allow illustration to take 60% of the width */
+  }
+  
+  .illustration img {
+    width: 90%; /* Ensure the image takes the full width of its container */
+    height: auto;
+    margin-top: -60px;
+  }
+  
+  .blogging-content {
+    flex: 1 1 50%; /* Allow content to take 40% of the width */
+    margin-left: 20px;
+    text-align: justify;
+    margin-top: -15%;
+  }
+  
+  .blogging-content h1 {
+    font-size: 48px;
+    color: #00bcd4;
+  }
+  
+  .blogging-content p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .read-more-button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
