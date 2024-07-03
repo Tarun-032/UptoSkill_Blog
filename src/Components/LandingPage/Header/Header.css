@@ -8,9 +8,15 @@
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 50px; /* Set a fixed height for the navbar */
+}
+
+.logo img {
   margin-left: 30px;
+  width: 120px; /* Maintain aspect ratio */
+  height: 205%; /* Fill the height of the logo container */
 }
 
 .search-bar {

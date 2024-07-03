@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+import Logo from '../../../assets/Logo.png';
+
 function Header() {
   return (
     <header className="header">
-      <div className="logo">YOUR LOGO</div>
+      <div className="logo"> <img src={Logo} alt="logo" /></div>
       <div className="search-bar">
         <input type="text" placeholder="Search..." />
         <span className="search-icon">

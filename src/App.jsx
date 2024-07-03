@@ -4,7 +4,7 @@ import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import LandingPage from './Components/LandingPage/LandingPage';
 import Login from './Components/Login/Login';
-import CreateBlog from './Components/CreateBlog/CreateBlog';
+import Blog from './Components/CreateBlog/Blog';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/create" element={<CreateBlog />} />
+          <Route path="/create" element={<Blog />} />
           {/* Add other routes as needed */}
         </Routes>
       </div>
