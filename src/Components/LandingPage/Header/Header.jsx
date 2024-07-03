@@ -15,7 +15,7 @@ function Header() {
         </span>
       </div>
       <nav className="nav">
-        <Link to="/about">About</Link>
+        <Link to="/">Home</Link>
         <Link to="/create">Create</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/community">Community</Link>
