@@ -59,6 +59,7 @@ function CreateBlog() {
                   value={content}
                   onChange={handleContentChange}
                   config={{
+                    height: 578,
                     uploader: {
                       insertImageAsBase64URI: true,
                     },
