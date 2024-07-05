@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
+  padding: 10px;
+  background-color: #121c28;
   border-bottom: 1px solid #ddd;
 }
 
@@ -16,7 +16,7 @@
 .logo img {
   margin-left: 30px;
   width: 120px; /* Maintain aspect ratio */
-  height: 205%; /* Fill the height of the logo container */
+  height: 140px; 
 }
 
 .search-bar {
@@ -27,16 +27,17 @@
 }
 
 .search-bar input {
-  width: 60%;
-  padding: 10px 40px 10px 20px; /* Add padding to make space for the icon */
+  width: 65%;
+  height: 35px;
+  padding: 9px 50px 10px 10px; /* Add padding to make space for the icon */
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .search-icon {
   position: absolute;
-  right: 22%; /* Adjust based on the width of the input */
+  right: 22%; 
   top: 50%;
   transform: translateY(-50%);
   color: #888;
@@ -49,10 +50,41 @@
 
 .nav a {
   margin: 0 30px;
+  font-size: 18px;
   text-decoration: none;
-  color: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; /* Needed for the underline effect */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+
+.nav a:hover:not(.signup-button) {
+  color: #00bcd4; /* Change color on hover */
+}
+
+.nav a:not(.signup-button)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00bcd4; /* Color of the underline */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover:not(.signup-button)::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* CSS to ensure the signup button has no hover effect */
+.nav a.signup-button:hover {
+  color: white; /* Keep the original color */
+}
 .signup-button {
   padding: 10px 20px;
   background-color: #00bcd4;
@@ -61,3 +93,20 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.read-more-button {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Enhanced hover effect */
+.read-more-button:hover {
+  background-color: #0097a7; /* Darker shade of the button's background color */
+  color: #e0f7fa; /* Lighter shade for the text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transform: scale(1.05); /* Slightly increase the size */
